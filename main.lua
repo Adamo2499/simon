@@ -1,0 +1,1 @@
+local SimonCharacterMod = RegisterMod("Simon Character Mod",1)
