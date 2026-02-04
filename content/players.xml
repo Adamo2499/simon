@@ -1,0 +1,14 @@
+<players root="gfx/characters/costumes/" portraitroot="gfx/ui/stage/" nameimageroot="gfx/ui/boss/">
+    <player name="Simon"
+        skin="character_simon.png"
+        nameimage="playername_simon.png"
+        portrait="playerportrait_simon.png"
+        skinColor="-1"
+        items="525"
+        hp="4"
+        healthlimit="12"
+        speedmultiplayer="0.9"
+        birthright="Better creeps + max health up"
+        achievement="Simon"
+    />
+</players>

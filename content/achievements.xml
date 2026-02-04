@@ -1,0 +1,57 @@
+<achievements gfxroot="gfx/ui/achievement/">
+    <achievement name="Simon" gfx="achievement_simon.png" />
+    <achievement name="Simon holds Lost Cork" gfx="achievement_simonlostcork.png" />
+    	<!-- UNLOCK ORDER  -->
+	<!--
+		MomsHeart
+		Isaac
+		Satan
+		BossRush
+		BlueBaby
+		Lamb
+		MegaSatan
+		GreedMode
+		Hush
+		Greedier
+		Delirium
+		Mother
+		Beast
+		Tainted
+		FullCompletion
+
+		SoulPath
+		PolNegPath
+		MegaSatan
+		Greedier
+		Delirium
+		Mother
+		Beast
+		FullCompletion
+	-->
+
+    <!-- Simon unlocks -->
+    <achievement name="Cooties" gfx="achievement_cooties.png" />
+    <achievement name="Gospel of John" gfx="achievement_gospelofjohn.png" />
+    <achievement name="Hexagram" gfx="achievement_hexagram.png" />
+    <achievement name="Dopamine" gfx="achievement_dopamine.png" />
+    <achievement name="Sacred Sceptre" gfx="achievement_sacredsceptre.png" />
+    <achievement name="Scratching Pole" gfx="achievement_scratchingpole.png" />
+    <achievement name="Goat Milk" gfx="achievement_goatmilk.png" />
+    <achievement name="Ligma" gfx="achievement_ligma.png" />
+    <achievement name="Flex Seal" gfx="achievement_flexseal.png" />
+    <achievement name="Sleeping Bag" gfx="achievement_sleepingbag.png" />
+    <achievement name="IV Pole" gfx="achievement_ivpole.png" />
+    <achievement name="Isopropanol" gfx="achievement_isopropanol.png" />
+    <achievement name="Hanahaki" gfx="achievement_hanahaki.png" />
+    <achievement name="The Leper" gfx="achievement_taintedsimon.png" />
+    <achievement name="Angelic Robes" gfx="achievement_angelicrobes.png" />
+    
+    <!-- Tainted Simon unlocks -->
+    <achievement name="Soul of Simon" gfx="achievement_soulofsimon.png" />
+    <achievement name="Thermometer" gfx="achievement_thermometer.png" />
+    <achievement name="Bronze Pickups" gfx="achievement_bronzepickup.png" />
+    <achievement name="Suicide King?" gfx="achievement_reversedsuicideking.png" />
+    <achievement name="Rabies" gfx="achievement_rabies.png" />
+    <achievement name="Dad&apos;s Tie" gfx="achievement_dadstie.png" />
+    <achievement name="Ars Goetia" gfx="achievement_arsgoetia.png" />
+</achievements>

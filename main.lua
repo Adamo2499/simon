@@ -1,16 +1,17 @@
 local SimonCharacterMod = RegisterMod("Simon Character Mod",1)
 
 local simonPlayerType = Isaac.GetPlayerTypeByName("Simon", false)
-local hairCostume = Isaac.GetCostumeIdByPath("gfx/characters/simon_hair.anm2")
 
----Add costumes on init for Simon
+local SIMON_ACHIEVEMENT = Isaac.GetAchievementIdByName("Simon")
+local persistGameData = Isaac.GetPersistentGameData()
+local SHOULD_BLOCK_POPUP = false
+
 ---@param player EntityPlayer
-function SimonCharacterMod:GiveCostumesOnInit(player)
-    if player:GetPlayerType() ~= simonPlayerType then
-        return
+function SimonCharacterMod:UnlockSimon(player)
+    if player:GetPlayerType() == PlayerType.PLAYER_LAZARUS2 then
+        if not persistGameData:Unlocked(SIMON_ACHIEVEMENT) then
+            persistGameData:TryUnlock(SIMON_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
+        end
     end
-
-    player:AddNullCostume(hairCostume)
 end
-
-SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SimonCharacterMod.GiveCostumesOnInit)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_TRIGGER_PLAYER_DEATH_POST_CHECK_REVIVES, SimonCharacterMod.UnlockSimon)
