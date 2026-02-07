@@ -67,9 +67,9 @@ function SimonCharacterMod:HandleSimonCreep(player)
         local soulCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_HOLYWATER_TRAIL, 0, player.Position, Vector.Zero, player):ToEffect()
         local blackCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_BLACK, 0, player.Position, Vector.Zero, player):ToEffect()
         local whiteCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_WHITE, 0, player.Position, Vector.Zero, player):ToEffect()
-        local yellowCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_LEMON_MISHAP, 0, player.Position, Vector.Zero, player):ToEffect()
+        --local yellowCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_LEMON_MISHAP, 0, player.Position, Vector.Zero, player):ToEffect()
         local greenCreep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_GREEN, 0, player.Position, Vector.Zero, player):ToEffect()
-        local creepVariants = {redCreep, soulCreep, blackCreep, whiteCreep, yellowCreep, greenCreep}
+        local creepVariants = {redCreep, soulCreep, blackCreep, whiteCreep, greenCreep}
         local currentCreepVariant = creepVariants[math.random(#creepVariants)]
         if player:HasCollectible(CollectibleType.COLLECTIBLE_BIRTHRIGHT) then
             currentCreepVariant.SpriteScale = Vector(1,1)

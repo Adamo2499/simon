@@ -1,0 +1,5 @@
+<pocketitems>
+    <rune id="1" name="Soul of Simon" type="rune" hud="Soul of Simon" description="Bloody trait" mimiccharge="2" achievement="Soul of Simon" />
+    <card id="2" name="Suicide King?" type="suit" hud="Suicide King?" description="What doesn't kill you makes you stronger" mimiccharge="6" pickup="500" achievement="Suicide King?" />
+    <card id="3" name="Bronze" type="object" hud="Bronze" description="???" achievement="Bronze Pickups" />
+</pocketitems>

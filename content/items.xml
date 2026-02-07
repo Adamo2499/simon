@@ -1,0 +1,23 @@
+<items gfxroot="gfx/items/" version="1">
+<!-- COLLECTIBLES -->
+    <passive id="1" name="Cooties" gfx="cooties.png" description="???" quality="1" achievement="Cooties" />
+    <active  id="2" name="Gospel of John" gfx="cooties.png" description="???" quality="1" achievement="Gospel of John" chargetype="normal" maxcharges="4" />
+    <passive id="3" name="Hexagram" gfx="hexagram.png" description="???" quality="1" achievement="Hexagram" />
+    <passive id="4" name="Dopamine" gfx="dopamine.png" description="???" quality="1" achievement="Dopamine" />
+    <passive id="5" name="Sacred Sceptre" gfx="sacredsceptre.png" description="???" quality="1" achievement="Sacred Sceptre" />
+    <active  id="6" name="Scratching Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="Scratching Pole" chargetype="normal" maxcharges="6" />
+    <passive id="7" name="Goat Milk" gfx="goatmilk.png" description="Eeeugh" quality="1" achievement="Goat Milk" />
+    <active  id="6" name="Sleeping Bag" gfx="sleepingbag.png" description="???" quality="1" achievement="Sleeping Bag" chargetype="normal" maxcharges="6" />
+    <active  id="8" name="IV Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="IV Pole" chargetype="normal" maxcharges="6" />
+    <passive id="9" name="Isopropanol" gfx="isopropanol.png" description="Don't do it" quality="1" achievement="Isopropanol" />
+    <passive id="10" name="Hanahaki" gfx="hanahaki.png" description="???" quality="1" achievement="Hanahaki" />
+    <passive id="11" name="Angelic Robes" gfx="angelicrobes.png" description="???" quality="1" achievement="Angelic Robes" />
+    <active  id="12" name="Rabies" gfx="rabies.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
+    <active  id="13" name="Ars Goetia" gfx="arsgoetia.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
+
+<!-- TRINKETS -->
+    <trinket id="1" name="Ligma" gfx="ligma.png" description="???" achievement="Ligma" />
+    <trinket id="2" name="Flex Seal" gfx="flexseal.png" description="???" achievement="Flex Seal" />
+    <trinket id="3" name="Thermometer" gfx="thermometer.png" description="???" achievement="Thermometer" />
+    <trinket id="4" name="Dad&apos;s Tie" gfx="dadstie.png" description="???" achievement="Dad&apos;s Tie" />
+</items>
