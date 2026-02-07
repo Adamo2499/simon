@@ -5,9 +5,11 @@
         portrait="playerportrait_simon.png"
         skinColor="-1"
         items="525"
-        hp="4"
+        hp="8"
+        rottenhearts="2"
         healthlimit="12"
         speedmultiplayer="0.9"
+        damagemultiplayer="0.57"
         birthright="Better creeps + max health up"
         achievement="Simon"
     />
