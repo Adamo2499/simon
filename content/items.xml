@@ -11,13 +11,14 @@
     <active  id="8" name="IV Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="IV Pole" chargetype="normal" maxcharges="6" />
     <passive id="9" name="Isopropanol" gfx="isopropanol.png" description="Don't do it" quality="1" achievement="Isopropanol" />
     <passive id="10" name="Hanahaki" gfx="hanahaki.png" description="???" quality="1" achievement="Hanahaki" />
-    <passive id="11" name="Angelic Robes" gfx="angelicrobes.png" description="???" quality="1" achievement="Angelic Robes" />
+    <passive id="11" name="Angelic Robes" gfx="angelicrobes.png" description="???" quality="1" achievement="Angelic Robes" tags="angel offensive summonable"/>
     <active  id="12" name="Rabies" gfx="rabies.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
-    <active  id="13" name="Ars Goetia" gfx="arsgoetia.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
+    <active  id="13" name="Ars Goetia" gfx="arsgoetia.png" description="???" quality="1" achievement="Ars Goetia" chargetype="normal" maxcharges="6" tags="book offensive devil" />
 
 <!-- TRINKETS -->
     <trinket id="1" name="Ligma" gfx="ligma.png" description="???" achievement="Ligma" />
     <trinket id="2" name="Flex Seal" gfx="flexseal.png" description="???" achievement="Flex Seal" />
     <trinket id="3" name="Thermometer" gfx="thermometer.png" description="???" achievement="Thermometer" />
     <trinket id="4" name="Dad&apos;s Tie" gfx="dadstie.png" description="???" achievement="Dad&apos;s Tie" />
+    <trinket id="5" name="False Idol" gfx="falseidol.png" description="???" />
 </items>

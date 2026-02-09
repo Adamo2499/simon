@@ -37,13 +37,21 @@ SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_SLOT_COLLISION,SimonCharacter
 
 --------------------------------------------------------------------------------------------------
 
+local simonHairCostume = Isaac.GetCostumeIdByPath("gfx/characters/simon_hair.anm2")
+
 ---If respected achievement is unlocked, give Lost Cork to Simon
 ---@param player EntityPlayer
-function SimonCharacterMod:GiveLostCorkToSimon(player)
+function SimonCharacterMod:InitSimon(player)
     if player:GetPlayerType() ~= SIMON_PLAYER_TYPE then
         return
     end
 
+    -- Give hair to Simon
+    if simonHairCostume ~= nil then
+        player:AddNullCostume(simonHairCostume)
+    end
+
+    -- Give Lost Cork to Simon, if it's unlocked
     if not persistentGameData:Unlocked(SIMON_HOLDS_LOST_CORK_ACHIEVEMENT) then
         return
     end
@@ -51,7 +59,7 @@ function SimonCharacterMod:GiveLostCorkToSimon(player)
     player:AddSmeltedTrinket(TrinketType.TRINKET_LOST_CORK)
 end
 
-SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SimonCharacterMod.GiveLostCorkToSimon)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SimonCharacterMod.InitSimon)
 
 --------------------------------------------------------------------------------------------------
 
