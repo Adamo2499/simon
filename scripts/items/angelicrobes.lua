@@ -1,0 +1,5 @@
+-- Spectal
+-- 1.5 damage multiplayer
+-- 1.5 range multiplayer
+-- pentashot
+-- 0.7 fire rate multiplayer
