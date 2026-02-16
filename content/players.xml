@@ -4,7 +4,6 @@
         nameimage="playername_simon.png"
         portrait="playerportrait_simon.png"
         skinColor="-1"
-        items="525"
         hp="8"
         rottenhearts="2"
         healthlimit="12"
