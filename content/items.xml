@@ -2,7 +2,7 @@
 <!-- COLLECTIBLES -->
     <passive id="1" name="Cooties" gfx="cooties.png" description="???" quality="1" achievement="Cooties" />
     <active  id="2" name="Gospel of John" gfx="cooties.png" description="???" quality="1" achievement="Gospel of John" chargetype="normal" maxcharges="4" />
-    <passive id="3" name="Hexagram" gfx="hexagram.png" description="???" quality="1" achievement="Hexagram" />
+    <passive id="3" name="False Idol" gfx="falseidol.png" description="???" quality="1" devilprice="2" achievement="False Idol" />
     <passive id="4" name="Dopamine" gfx="dopamine.png" description="???" quality="1" achievement="Dopamine" />
     <passive id="5" name="Sacred Sceptre" gfx="sacredsceptre.png" description="???" quality="1" achievement="Sacred Sceptre" />
     <active  id="6" name="Scratching Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="Scratching Pole" chargetype="normal" maxcharges="6" />
@@ -20,5 +20,4 @@
     <trinket id="2" name="Flex Seal" gfx="flexseal.png" description="???" achievement="Flex Seal" />
     <trinket id="3" name="Thermometer" gfx="thermometer.png" description="???" achievement="Thermometer" />
     <trinket id="4" name="Dad&apos;s Tie" gfx="dadstie.png" description="???" achievement="Dad&apos;s Tie" />
-    <trinket id="5" name="False Idol" gfx="falseidol.png" description="???" />
 </items>

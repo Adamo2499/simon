@@ -32,7 +32,7 @@
     <!-- Simon unlocks -->
     <achievement name="Cooties" gfx="achievement_cooties.png" />
     <achievement name="Gospel of John" gfx="achievement_gospelofjohn.png" />
-    <achievement name="Hexagram" gfx="achievement_hexagram.png" />
+    <achievement name="False Idol" gfx="achievement_falseidol.png" />
     <achievement name="Dopamine" gfx="achievement_dopamine.png" />
     <achievement name="Sacred Sceptre" gfx="achievement_sacredsceptre.png" />
     <achievement name="Scratching Pole" gfx="achievement_scratchingpole.png" />
