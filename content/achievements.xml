@@ -44,7 +44,7 @@
     <achievement name="Isopropanol" gfx="achievement_isopropanol.png" />
     <achievement name="Hanahaki" gfx="achievement_hanahaki.png" />
     <achievement name="The Leper" gfx="achievement_taintedsimon.png" />
-    <achievement name="Angelic Robes" gfx="achievement_angelicrobes.png" />
+    <achievement name="Bishop&apos;s Robes" gfx="achievement_bishopsrobes.png" />
     
     <!-- Tainted Simon unlocks -->
     <achievement name="Soul of Simon" gfx="achievement_soulofsimon.png" />

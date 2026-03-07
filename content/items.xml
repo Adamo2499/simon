@@ -1,23 +1,28 @@
 <items gfxroot="gfx/items/" version="1">
-<!-- COLLECTIBLES -->
-    <passive id="1" name="Cooties" gfx="cooties.png" description="???" quality="1" achievement="Cooties" />
-    <active  id="2" name="Gospel of John" gfx="cooties.png" description="???" quality="1" achievement="Gospel of John" chargetype="normal" maxcharges="4" />
-    <passive id="3" name="False Idol" gfx="falseidol.png" description="???" quality="1" devilprice="2" achievement="False Idol" />
-    <passive id="4" name="Dopamine" gfx="dopamine.png" description="???" quality="1" achievement="Dopamine" />
-    <passive id="5" name="Sacred Sceptre" gfx="sacredsceptre.png" description="???" quality="1" achievement="Sacred Sceptre" />
-    <active  id="6" name="Scratching Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="Scratching Pole" chargetype="normal" maxcharges="6" />
-    <passive id="7" name="Goat Milk" gfx="goatmilk.png" description="Eeeugh" quality="1" achievement="Goat Milk" />
-    <active  id="6" name="Sleeping Bag" gfx="sleepingbag.png" description="???" quality="1" achievement="Sleeping Bag" chargetype="normal" maxcharges="6" />
-    <active  id="8" name="IV Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="IV Pole" chargetype="normal" maxcharges="6" />
-    <passive id="9" name="Isopropanol" gfx="isopropanol.png" description="Don't do it" quality="1" achievement="Isopropanol" />
-    <passive id="10" name="Hanahaki" gfx="hanahaki.png" description="???" quality="1" achievement="Hanahaki" />
-    <passive id="11" name="Angelic Robes" cache="damage range firedelay" gfx="angelicrobes.png" description="???" quality="1" achievement="Angelic Robes" tags="angel offensive summonable"/> <!-- Angelic Robes: Angel Room, Greed Angel Room,  Ultra Secret -->
-    <active  id="12" name="Rabies" gfx="rabies.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
-    <active  id="13" name="Ars Goetia" gfx="arsgoetia.png" description="???" quality="1" achievement="Ars Goetia" chargetype="normal" maxcharges="6" tags="book offensive devil" /> <!-- Ars Goetia: Devil Room, Greed Devil Room, Library, Ultra Secret -->
+        <!-- COLLECTIBLES -->
+        <passive id="1" name="Cooties" gfx="cooties.png" description="Ewwwww gross!" quality="1" achievement="Cooties" tags="offensive spider" chargetype="timed" maxcharges="150" />
+        <active id="2" name="Gospel of John" gfx="cooties.png" description="Lazarus, come out!" quality="1" tags="offensive nocantrip nochallenge angel book" achievement="Gospel of John" chargetype="normal" maxcharges="6" />
+        <passive id="3" name="False Idol" gfx="falseidol.png" description="A mere mockery" quality="2" devilprice="2" tags="summmonable offensive lazarusshared nocantrip devil" achievement="False Idol" />
+        <passive id="4" name="Dopamine" gfx="dopamine.png" description="Let's fucking goooooo!!!" quality="2" tags="offensive syringe" achievement="Dopamine" />
+        <!-- <passive id="5" name="Sacred Sceptre" gfx="sacredsceptre.png" description="???" quality="1" achievement="Sacred Sceptre" /> -->
+        <active id="6" name="Scratching Pole" gfx="scratchingpole.png" description="That's the spot" quality="1" tags="offensive summonable guppy" achievement="Scratching Pole" />
+        <passive id="7" name="Goat Milk" gfx="goatmilk.png" description="Goated tears" quality="1" tags="offensive summonable" achievement="Goat Milk" />
+        <active id="8" name="Sleeping Bag" gfx="sleepingbag.png" description="Sweet dreams are made of this" quality="1" achievement="Sleeping Bag" chargetype="special" maxcharges="0" />
+        <active id="9" name="IV Pole" gfx="scratchingpole.png" description="???" quality="1" achievement="IV Pole" chargetype="normal" maxcharges="6" />
+        <passive id="10" name="Isopropanol" gfx="isopropanol.png" description="Don't do it" quality="1" achievement="Isopropanol" />
+        <passive id="11" name="Hanahaki" gfx="hanahaki.png" description="???" quality="1" achievement="Hanahaki" />
+        <passive id="12" name="Angelic Robes" cache="damage range firedelay" gfx="angelicrobes.png" description="???" quality="1" tags="angel offensive summonable" />
+        <!-- Angelic Robes: Angel Room, Greed Angel
+    Room,  Ultra Secret -->
+        <active id="13" name="Rabies" gfx="rabies.png" description="???" quality="1" achievement="Raboes" chargetype="normal" maxcharges="6" />
+        <active id="14" name="Ars Goetia" gfx="arsgoetia.png" description="???" quality="1" achievement="Ars Goetia" chargetype="normal" maxcharges="6" tags="book offensive devil" />
+        <!-- Ars Goetia: Devil Room, Greed Devil Room,
+    Library, Ultra Secret -->
+        <passive id="15" name="Bishop's Robes" gfx="bishopsrobes.png" description="???" quality="1" achievement="Bishop's Robes" tags="angel offensive summonable" />
 
-<!-- TRINKETS -->
-    <trinket id="1" name="Ligma" gfx="ligma.png" description="???" achievement="Ligma" />
-    <trinket id="2" name="Flex Seal" gfx="flexseal.png" description="???" achievement="Flex Seal" />
-    <trinket id="3" name="Thermometer" gfx="thermometer.png" description="???" achievement="Thermometer" />
-    <trinket id="4" name="Dad&apos;s Tie" gfx="dadstie.png" description="???" achievement="Dad&apos;s Tie" />
+        <!-- TRINKETS -->
+        <trinket id="1" name="Ligma" gfx="ligma.png" description="???" achievement="Ligma" />
+        <trinket id="2" name="Flex Seal" gfx="flexseal.png" description="???" achievement="Flex Seal" />
+        <trinket id="3" name="Thermometer" gfx="thermometer.png" description="???" achievement="Thermometer" />
+        <trinket id="4" name="Dad&apos;s Tie" gfx="dadstie.png" description="???" achievement="Dad&apos;s Tie" />
 </items>

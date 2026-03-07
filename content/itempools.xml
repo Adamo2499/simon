@@ -1,0 +1,77 @@
+<ItemPools>
+    <Pool Name="treasure">
+        <Item Name="Cooties" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Scratching Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Goat Milk" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="IV Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Hanahaki" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="greedTreasure">
+        <Item Name="Cooties" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Scratching Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Goat Milk" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="IV Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" /> <!-- +Blood Donation Machine reward -->
+        <Item Name="Hanahaki" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="boss"></Pool>
+    <Pool Name="greedBoss"></Pool> <!-- Silver Treasure Room-->
+    <Pool Name="devil">
+        <Item Name="False Idol" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Ars Goetia" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="greedDevil">
+        <Item Name="False Idol" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Ars Goetia" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="angel">
+        <Item Name="Gospel of John" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Angelic Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Bishop's Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="greedAngel">
+        <Item Name="Gospel of John" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Angelic Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Bishop's Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="shop">
+        <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Sleeping Bag" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="greedShop">
+        <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Scratching Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Goat Milk" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Sleeping Bag" Weight="1" DecreaseBy="1" RemoveOn="0.1" /> <!-- Also sometimes in bedroom-->
+        <Item Name="Hanahaki" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="secret">
+        <Item Name="Sleeping Bag" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="greedSecret"></Pool>
+    <Pool Name="curse"></Pool>
+    <Pool Name="greedCurse"></Pool>
+    <Pool Name="library">
+        <Item Name="Gospel of John" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Ars Goetia" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="goldenChest"></Pool>
+    <Pool Name="redChest"></Pool>
+    <Pool Name="beggar"></Pool>
+    <Pool Name="demonBeggar"></Pool>
+    <Pool Name="craneGame"></Pool>
+    <Pool Name="bombBum"></Pool>
+    <Pool Name="keyMaster">
+        <Item Name="Cooties" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="planetarium"></Pool>
+    <Pool Name="oldChest"></Pool>
+    <Pool Name="ultraSecret">
+        <Item Name="False Idol" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
+    <Pool Name="babyShop"></Pool>
+    <Pool Name="woodenChest"></Pool>
+    <Pool Name="rottenBeggar"></Pool>
+    <Pool Name="revSuicideKing"></Pool>
+</ItemPools>
