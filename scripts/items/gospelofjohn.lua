@@ -1,4 +1,5 @@
-local GOSPEL_OF_JOHN = Isaac.GetItemIdByName("Gospel of John")
+local Enums = require("scripts.enums")
+local GOSPEL_OF_JOHN = Enums.Items.GOSPEL_OF_JOHN
 
 ---@param item CollectibleType
 ---@param rng RNG

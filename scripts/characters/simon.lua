@@ -1,4 +1,5 @@
-local SIMON_PLAYER_TYPE = Isaac.GetPlayerTypeByName("Simon")
+local Enums = require("scripts.enums")
+local SIMON_PLAYER_TYPE = Enums.Characters.SIMON
 local game = Game()
 local persistentGameData = Isaac.GetPersistentGameData()
 

@@ -1,4 +1,5 @@
-local SLEEPING_BAG = Isaac.GetItemIdByName("Sleeping Bag")
+local Enums = require("scripts.enums")
+local SLEEPING_BAG = Enums.Items.SLEEPING_BAG
 
 ---@param player EntityPlayer
 local function fullHealCurrentPlayer(player)

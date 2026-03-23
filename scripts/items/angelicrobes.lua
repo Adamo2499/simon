@@ -1,4 +1,5 @@
-local angelicRobes = Isaac.GetItemIdByName("Angelic Robes")
+local Enums = require("scripts.enums")
+local ANGELIC_ROBES = Enums.Items.ANGELIC_ROBES
 
 local damageMult = 1.5
 
@@ -6,8 +7,8 @@ local damageMult = 1.5
 ---@param player EntityPlayer
 ---@param cacheFlags any
 function SimonCharacterMod:EvaluateDamageCache(player, cacheFlags)
-    if player:HasCollectible(angelicRobes) then
-        local itemCount = player:GetCollectibleNum(angelicRobes)
+    if player:HasCollectible(ANGELIC_ROBES) then
+        local itemCount = player:GetCollectibleNum(ANGELIC_ROBES)
         local stackedDamageMult = damageMult * itemCount
 
         player.Damage = player.Damage * stackedDamageMult
@@ -24,8 +25,8 @@ local rangeMult = 1.5
 ---@param player EntityPlayer
 ---@param cacheFlags any
 function SimonCharacterMod:EvaluateRangeCache(player, cacheFlags)
-    if player:HasCollectible(angelicRobes) then
-        local itemCount = player:GetCollectibleNum(angelicRobes)
+    if player:HasCollectible(ANGELIC_ROBES) then
+        local itemCount = player:GetCollectibleNum(ANGELIC_ROBES)
         local stackedTearRangeMult = rangeMult * itemCount
 
         player.TearRange = player.TearRange * stackedTearRangeMult
@@ -42,8 +43,8 @@ local fireRateMult = 0.7
 ---@param player EntityPlayer
 ---@param cacheFlags any
 function SimonCharacterMod:EvaluateFireRateCache(player, cacheFlags)
-    if player:HasCollectible(angelicRobes) then
-        local itemCount = player:GetCollectibleNum(angelicRobes)
+    if player:HasCollectible(ANGELIC_ROBES) then
+        local itemCount = player:GetCollectibleNum(ANGELIC_ROBES)
         local stackedFireRateMult = fireRateMult * itemCount
 
         player.FireDelay = player.FireDelay * stackedFireRateMult
@@ -58,7 +59,7 @@ SimonCharacterMod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE,SimonCharacterMod.E
 ---@param player EntityPlayer
 ---@param flag TearFlags
 function SimonCharacterMod:OnEvaluateTearFlags(player, flag)
-    if player:HasCollectible(angelicRobes) then
+    if player:HasCollectible(ANGELIC_ROBES) then
         player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
     end
 end
