@@ -8,6 +8,7 @@ include("scripts.characters.simon")
 include("scripts.items.angelicrobes")
 include("scripts.items.gospelofjohn")
 include('scripts.items.sleepingbag')
+include('scripts.items.barmbrack')
 --#endregion
 
 --#region modcompat

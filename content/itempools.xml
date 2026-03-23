@@ -6,6 +6,7 @@
         <Item Name="Goat Milk" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="IV Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Hanahaki" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
     </Pool>
     <Pool Name="greedTreasure">
         <Item Name="Cooties" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
@@ -14,6 +15,7 @@
         <Item Name="Goat Milk" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="IV Pole" Weight="1" DecreaseBy="1" RemoveOn="0.1" /> <!-- +Blood Donation Machine reward -->
         <Item Name="Hanahaki" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
     </Pool>
     <Pool Name="boss"></Pool>
     <Pool Name="greedBoss"></Pool> <!-- Silver Treasure Room-->
@@ -29,15 +31,18 @@
         <Item Name="Gospel of John" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Angelic Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Bishop's Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
     </Pool>
     <Pool Name="greedAngel">
         <Item Name="Gospel of John" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Angelic Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Bishop's Robes" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
     </Pool>
     <Pool Name="shop">
         <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
         <Item Name="Sleeping Bag" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
     </Pool>
     <Pool Name="greedShop">
         <Item Name="Dopamine" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
@@ -58,7 +63,9 @@
     </Pool>
     <Pool Name="goldenChest"></Pool>
     <Pool Name="redChest"></Pool>
-    <Pool Name="beggar"></Pool>
+    <Pool Name="beggar">
+        <Item Name="Barmbrack" Weight="1" DecreaseBy="1" RemoveOn="0.1" />
+    </Pool>
     <Pool Name="demonBeggar"></Pool>
     <Pool Name="craneGame"></Pool>
     <Pool Name="bombBum"></Pool>

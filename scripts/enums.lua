@@ -7,7 +7,8 @@ Enums.Characters = {
 Enums.Items = {
     GOSPEL_OF_JOHN = Isaac.GetItemIdByName("Gospel of John"),
     ANGELIC_ROBES = Isaac.GetItemIdByName("Angelic Robes"),
-    SLEEPING_BAG = Isaac.GetItemIdByName("Sleeping Bag")
+    SLEEPING_BAG = Isaac.GetItemIdByName("Sleeping Bag"),
+    BARMBRACK = Isaac.GetItemIdByName("Barmbrack")
 }
 
 return Enums
