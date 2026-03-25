@@ -34,7 +34,8 @@ function SimonCharacterMod:UnlockLostCorkForSimon()
 end
 
 SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_MODS_LOADED, SimonCharacterMod.UnlockLostCorkForSimon)
-SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_SLOT_COLLISION, SimonCharacterMod.UnlockLostCorkForSimon, SlotVariant.GREED_DONATION_MACHINE)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_SLOT_COLLISION, SimonCharacterMod.UnlockLostCorkForSimon,
+    SlotVariant.GREED_DONATION_MACHINE)
 
 --------------------------------------------------------------------------------------------------
 
@@ -113,7 +114,6 @@ function SimonCharacterMod:HandleSimonBirthright(player)
 
     player:SetD8DamageModifier(1.5)
     player:SetD8SpeedModifier(0.8)
-
 end
 
 SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, SimonCharacterMod.HandleSimonBirthright)
@@ -138,25 +138,43 @@ SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SimonCharacterMo
 
 --------------------------------------------------------------------------------------------------
 
--- function SimonCharacterMod:UnlockStuff(player)
---     if player:GetPlayerType() ~= SIMON_PLAYER_TYPE then
---         return
---     end
+SimonCharacterMod:AddCallback(ModCallbacks.MC_PRE_COMPLETION_EVENT, function(_, mark)
+    local players = PlayerManager.GetPlayers()
+    for _, player in ipairs(players) do
+        if player:GetPlayerType() == SIMON_PLAYER_TYPE and not player.Parent then
+            local marks = {
+                [CompletionType.MOMS_HEART] = Enums.Achievements.COOTIES,
+                [CompletionType.ULTRA_GREED] = Enums.Achievements.LIGMA,
+                [CompletionType.ULTRA_GREEDIER] = Enums.Achievements.SLEEPING_BAG,
+                [CompletionType.BOSS_RUSH] = Enums.Achievements.DOPAMINE,
+                [CompletionType.HUSH] = Enums.Achievements.FLEX_SEAL,
+                [CompletionType.ISAAC] = Enums.Achievements.GOSPEL_OF_JOHN,
+                [CompletionType.BLUE_BABY] = Enums.Achievements.BARMBRACK,
+                [CompletionType.SATAN] = Enums.Achievements.FALSE_IDOL,
+                [CompletionType.LAMB] = Enums.Achievements.SCRATCHING_POLE,
+                [CompletionType.MEGA_SATAN] = Enums.Achievements.GOAT_MILK,
+                [CompletionType.DELIRIUM] = Enums.Achievements.IV_POLE,
+                [CompletionType.MOTHER] = Enums.Achievements.ISOPROPANOL,
+                [CompletionType.BEAST] = Enums.Achievements.HANAHAKI,
+            }
+            if mark == CompletionType.ULTRA_GREEDIER then -- make damn sure greedier unlocks greed too
+                SimonCharacterMod.UnlockAchievement(marks[CompletionType.ULTRA_GREED])
+            end
+            if marks[mark] then
+                SimonCharacterMod.UnlockAchievement(marks[mark])
+            end
+            if Isaac.AllMarksFilled(player:GetPlayerType()) == 2 then
+                SimonCharacterMod.UnlockAchievement(Enums.Achievements.BISHOPS_ROBES)
+            end
+        end
+    end
+end)
 
---     local simonMarks = Isaac.GetCompletionMarks(player)
---     local GOSPEL_OF_JOHN_ACHIEVEMENT = Isaac.GetAchievementIdByName("Gospel of John")
-
---     if simonMarks.Isaac >= 0 then
---         if not persistentGameData:Unlocked(GOSPEL_OF_JOHN_ACHIEVEMENT) then
---             persistentGameData:TryUnlock(GOSPEL_OF_JOHN_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
---         end
---     end
-
---     local ANGELIC_ROBES_ACHIEVEMENT = Isaac.GetAchievementIdByName("Angelic Robes")
-
---     if Isaac.AllMarksFilled(player) then
---         if not persistentGameData:Unlocked(ANGELIC_ROBES_ACHIEVEMENT) then
---             persistentGameData:TryUnlock(ANGELIC_ROBES_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
---         end
---     end
--- end
+function SimonCharacterMod.UnlockAchievement(unlock)
+    local pgd = Isaac.GetPersistentGameData()
+    if not game:AchievementUnlocksDisallowed() then
+        if not pgd:Unlocked(unlock) then
+            pgd:TryUnlock(unlock)
+        end
+    end
+end

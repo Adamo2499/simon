@@ -11,4 +11,21 @@ Enums.Items = {
     BARMBRACK = Isaac.GetItemIdByName("Barmbrack")
 }
 
+Enums.Achievements = {
+    COOTIES = Isaac.GetAchievementIdByName("Cooties"),
+    LIGMA = Isaac.GetAchievementIdByName("Ligma"),
+    SLEEPING_BAG = Isaac.GetAchievementIdByName("Sleeping Bag"),
+    DOPAMINE = Isaac.GetAchievementIdByName("Dopamine"),
+    FLEX_SEAL = Isaac.GetAchievementIdByName("Flex Seal"),
+    GOSPEL_OF_JOHN = Isaac.GetAchievementIdByName("Gospel of John"),
+    BARMBRACK = Isaac.GetAchievementIdByName("Barnbrack"),
+    FALSE_IDOL = Isaac.GetAchievementIdByName("False Idol"),
+    SCRATCHING_POLE = Isaac.GetAchievementIdByName("Scratching Pole"),
+    GOAT_MILK = Isaac.GetAchievementIdByName("Goat Milk"),
+    IV_POLE = Isaac.GetAchievementIdByName("IV Pole"),
+    ISOPROPANOL = Isaac.GetAchievementIdByName("Isopropanol"),
+    HANAHAKI = Isaac.GetAchievementIdByName("Hanahaki"),
+    BISHOPS_ROBES = Isaac.GetAchievementIdByName("Bishop&apos;s Robes")
+}
+
 return Enums
