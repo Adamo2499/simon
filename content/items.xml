@@ -1,6 +1,6 @@
 <items gfxroot="gfx/items/" version="1">
         <!-- COLLECTIBLES -->
-        <passive id="1" name="Cooties" gfx="cooties.png" description="Ewwwww gross!" quality="1" achievement="Cooties" tags="offensive spider" chargetype="timed" maxcharges="150" />
+        <active id="1" name="Cooties" gfx="cooties.png" description="Ewwwww gross!" quality="1" achievement="Cooties" tags="offensive spider" chargetype="timed" maxcharges="150" />
         <active id="2" name="Gospel of John" gfx="cooties.png" description="Lazarus, come out!" quality="1" tags="offensive nocantrip nochallenge angel book" achievement="Gospel of John" chargetype="normal" maxcharges="6" />
         <passive id="3" name="False Idol" gfx="falseidol.png" description="A mere mockery" quality="2" devilprice="2" tags="summmonable offensive lazarusshared nocantrip devil" achievement="False Idol" />
         <passive id="4" name="Dopamine" gfx="dopamine.png" description="Let's fucking goooooo!!!" quality="2" tags="offensive syringe" achievement="Dopamine" />

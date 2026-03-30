@@ -8,7 +8,8 @@ Enums.Items = {
     GOSPEL_OF_JOHN = Isaac.GetItemIdByName("Gospel of John"),
     ANGELIC_ROBES = Isaac.GetItemIdByName("Angelic Robes"),
     SLEEPING_BAG = Isaac.GetItemIdByName("Sleeping Bag"),
-    BARMBRACK = Isaac.GetItemIdByName("Barmbrack")
+    BARMBRACK = Isaac.GetItemIdByName("Barmbrack"),
+    COOTIES = Isaac.GetItemIdByName("Cooties")
 }
 
 Enums.Achievements = {
