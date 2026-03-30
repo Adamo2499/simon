@@ -26,20 +26,24 @@ end
 SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_ADD_COLLECTIBLE, SimonCharacterMod.SpawnRandomComsumableUponPickup)
 
 function SimonCharacterMod:AddBonusDevilAngelChance()
-    local currentDevilRoomChance = math.min(currentRoom:GetDevilRoomChance(), 1.0)
-    local currentAngelRoomChance = currentLevel:GetAngelRoomChance()
-    local BARMBRACK_DEAL_CHANCE_BONUS = 0.05 -- 5% deal increase
+    local player = PlayerManager.FirstCollectibleOwner(BARMBRACK, false)
+    if player then
+        local currentDevilRoomChance = math.min(currentRoom:GetDevilRoomChance(), 1.0)
+        local currentAngelRoomChance = currentLevel:GetAngelRoomChance()
+        local BARMBRACK_DEAL_CHANCE_BONUS = 0.05 -- 5% deal increase
 
-    if currentDevilRoomChance > 0.0 and currentAngelRoomChance == 0.0 then
-        currentDevilRoomChance = currentDevilRoomChance + BARMBRACK_DEAL_CHANCE_BONUS
-    elseif currentDevilRoomChance == 0.0 and currentAngelRoomChance > 0.0  then
-        currentAngelRoomChance = currentAngelRoomChance + BARMBRACK_DEAL_CHANCE_BONUS
-    elseif currentDevilRoomChance > 0.0 and currentAngelRoomChance > 0.0 then
-        currentDevilRoomChance = currentDevilRoomChance + (BARMBRACK_DEAL_CHANCE_BONUS / 2)
-        currentAngelRoomChance = currentAngelRoomChance + (BARMBRACK_DEAL_CHANCE_BONUS / 2)
+        if currentDevilRoomChance > 0.0 and currentAngelRoomChance == 0.0 then
+            currentDevilRoomChance = currentDevilRoomChance + BARMBRACK_DEAL_CHANCE_BONUS
+        elseif currentDevilRoomChance == 0.0 and currentAngelRoomChance > 0.0  then
+            currentAngelRoomChance = currentAngelRoomChance + BARMBRACK_DEAL_CHANCE_BONUS
+        elseif currentDevilRoomChance > 0.0 and currentAngelRoomChance > 0.0 then
+            currentDevilRoomChance = currentDevilRoomChance + (BARMBRACK_DEAL_CHANCE_BONUS / 2)
+            currentAngelRoomChance = currentAngelRoomChance + (BARMBRACK_DEAL_CHANCE_BONUS / 2)
+        end
+
+        return currentDevilRoomChance
     end
 
-    return currentDevilRoomChance
 end
 
-SimonCharacterMod:AddCallback(ModCallbacks.MC_PRE_DEVIL_APPLY_SPECIAL_ITEMS, SimonCharacterMod.AddBonusDevilAngelChance)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_PRE_DEVIL_APPLY_ITEMS, SimonCharacterMod.AddBonusDevilAngelChance)
