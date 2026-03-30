@@ -8,16 +8,26 @@ local SHOULD_BLOCK_POPUP = false
 local SIMON_ACHIEVEMENT = Isaac.GetAchievementIdByName("Simon")
 
 ---Unlock Simon as playable character
----@param player EntityPlayer
-function SimonCharacterMod:UnlockSimon(player)
-    if player:GetPlayerType() == PlayerType.PLAYER_LAZARUS2 then
+function SimonCharacterMod:UnlockSimonViaBloodDonationMachine()
+    local player = Isaac.GetPlayer(0)
+    if player:GetPlayerType() == PlayerType.PLAYER_LAZARUS2 and player:IsDead() and not player:WillPlayerRevive() then
         if not persistentGameData:Unlocked(SIMON_ACHIEVEMENT) then
             persistentGameData:TryUnlock(SIMON_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
         end
     end
 end
 
-SimonCharacterMod:AddCallback(ModCallbacks.MC_TRIGGER_PLAYER_DEATH_POST_CHECK_REVIVES, SimonCharacterMod.UnlockSimon)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_SLOT_COLLISION, SimonCharacterMod.UnlockSimonViaBloodDonationMachine, SlotVariant.BLOOD_DONATION_MACHINE)
+
+function SimonCharacterMod:UnlockSimonViaIVBag(item, rng, player, useFlag, activeSlot)
+    if player:GetPlayerType() == PlayerType.PLAYER_LAZARUS2 and player:IsDead() and not player:WillPlayerRevive() then
+        if not persistentGameData:Unlocked(SIMON_ACHIEVEMENT) then
+            persistentGameData:TryUnlock(SIMON_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
+        end
+    end
+end
+
+SimonCharacterMod:AddCallback(ModCallbacks.MC_USE_ITEM, SimonCharacterMod.UnlockSimonViaIVBag, CollectibleType.COLLECTIBLE_IV_BAG)
 
 --------------------------------------------------------------------------------------------------
 
@@ -33,7 +43,7 @@ function SimonCharacterMod:UnlockLostCorkForSimon()
     end
 end
 
-SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_MODS_LOADED, SimonCharacterMod.UnlockLostCorkForSimon)
+SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, SimonCharacterMod.UnlockLostCorkForSimon)
 SimonCharacterMod:AddCallback(ModCallbacks.MC_POST_SLOT_COLLISION, SimonCharacterMod.UnlockLostCorkForSimon,
     SlotVariant.GREED_DONATION_MACHINE)
 
