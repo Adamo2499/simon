@@ -36,6 +36,8 @@ local SIMON_LOST_CORK_GREED_DONATION_MACHINE_REQUIREMENT = 705
 
 --- Unlock Lost Cork for Simon
 function SimonCharacterMod:UnlockLostCorkForSimon()
+    if Game():GetPlayer(0):GetPlayerType() ~= SIMON_PLAYER_TYPE then return end
+
     if persistentGameData:GetEventCounter(EventCounter.GREED_DONATION_MACHINE_COUNTER) >= SIMON_LOST_CORK_GREED_DONATION_MACHINE_REQUIREMENT then
         if not persistentGameData:Unlocked(SIMON_HOLDS_LOST_CORK_ACHIEVEMENT) then
             persistentGameData:TryUnlock(SIMON_HOLDS_LOST_CORK_ACHIEVEMENT, SHOULD_BLOCK_POPUP)
