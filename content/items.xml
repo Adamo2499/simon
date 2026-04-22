@@ -19,6 +19,7 @@
         <!-- Ars Goetia: Devil Room, Greed Devil Room,
     Library, Ultra Secret -->
         <passive id="15" name="Bishop's Robes" gfx="bishopsrobes.png" description="Shelter your lifeforce" quality="4" achievement="Bishop's Robes" tags="angel offensive summonable nocantrip" />
+        <active id="16" name="Sippy Cap" description="???" quality="1" chargetype="normal" maxcharges="3" />
 
         <!-- TRINKETS -->
         <trinket id="1" name="Ligma" gfx="ligma.png" description="???" achievement="Ligma" />

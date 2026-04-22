@@ -11,6 +11,7 @@ include('scripts.items.sleepingbag')
 include('scripts.items.barmbrack')
 include("scripts.items.cooties")
 include("scripts.items.bishopsrobes")
+include("scripts.items.sippycap")
 --#endregion
 
 --#region modcompat
