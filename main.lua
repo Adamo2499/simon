@@ -10,6 +10,7 @@ include("scripts.items.gospelofjohn")
 include('scripts.items.sleepingbag')
 include('scripts.items.barmbrack')
 include("scripts.items.cooties")
+include("scripts.items.bishopsrobes")
 --#endregion
 
 --#region modcompat

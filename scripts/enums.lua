@@ -9,7 +9,8 @@ Enums.Items = {
     ANGELIC_ROBES = Isaac.GetItemIdByName("Angelic Robes"),
     SLEEPING_BAG = Isaac.GetItemIdByName("Sleeping Bag"),
     BARMBRACK = Isaac.GetItemIdByName("Barmbrack"),
-    COOTIES = Isaac.GetItemIdByName("Cooties")
+    COOTIES = Isaac.GetItemIdByName("Cooties"),
+    BISHOPS_ROBES = Isaac.GetItemIdByName("Bishop's Robes")
 }
 
 Enums.Achievements = {
